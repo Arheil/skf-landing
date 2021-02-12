@@ -1,0 +1,636 @@
+@font-face {
+  src: url("/src/fonts/NunitoSans-Regular.ttf");
+  font-family: "Nunito Sans";
+}
+
+@font-face {
+  src: url("/src/fonts/YesevaOne-Regular.ttf");
+  font-family: "Yeseva One";
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito Sans";
+  color: #363636;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  --main-decor-color: #E3B873;
+  --bg-dark: #131313;
+}
+
+.big-text {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button {
+  border: 0;
+  outline: 0;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 2px;
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+  background-color: var( --main-decor-color);
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+}
+
+.hidden, .visible {
+  display: none;
+}
+
+.subtitle {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: var(--main-decor-color);
+}
+
+.description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bg-dark);
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  height: 55px;
+  padding: 36px 90px;
+  align-items: center;
+  max-width: 100vw;
+  padding: 23px 18px;
+}
+
+.header-contacts {
+  max-width: 125px;
+  height: 15px;
+}
+
+.header-logo {
+  display: flex;
+  font-size: 11px;
+  line-height: 15px;
+}
+
+.header-tel {
+  display: flex;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: right;
+  color: #fff;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: center / cover no-repeat url("../img/main-image.jpg");
+}
+
+.dark_block {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  max-width: 338px;
+  height: auto;
+  top: 85px;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+
+.title-header {
+  max-width: 675px;
+  font-size: 23px;
+  line-height: 132.83%;
+  color: #fff;
+  text-align: left;
+}
+
+.title .title_city {
+  color: var(--main-decor-color);
+}
+
+.title-content {
+  max-width: 505px;
+  height: 90px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 135.84%;
+  color: #ffffff;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.options-button {
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 25px;
+  background-color: var(--main-decor-color);
+}
+
+.options-button:last-child {
+  margin-bottom: 0;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+/*section projects*/
+
+.projects-mobile {
+  width: 100vw;
+  background-color: var(--bg-dark);
+  padding-bottom: 20px;
+}
+
+/*slider block*/
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.slider-wrapper {
+  position: relative;
+  margin: 0 auto;
+  max-width: 340px;
+}
+
+.slider-foto {
+  width: 100%;
+  height: auto;
+}
+
+.slider-btn {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.slider-btn--right,
+.slider-btn--left {
+  position: absolute;
+}
+
+.slider-btn--right {
+  top: 37%;
+  right: 8%;
+}
+
+.slider-btn--left {
+  top: 37%;
+  left: 8%;
+}
+
+.slider-card_title-mobile {
+  color:  var(--main-decor-color);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 200px;
+  height: 66px;
+  font-size: 22px;
+  line-height: 138.6%;
+  margin-top: 36px;
+  margin-bottom: 22px;
+  letter-spacing: -0.07em;
+}
+
+.slider-card_text-mobile {
+  max-width: 442px;
+  height: 86px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 158.48%;
+  text-align: center;
+  color: #ffffff;
+  padding: 0 25px;
+}
+
+.slider-info-mobile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.slider-item-mobile:nth-child(even) {
+  margin-top: 20px;
+}
+
+.slider-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slider-item_title {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 138.6%;
+  margin-bottom: 13px;
+  text-transform: uppercase;
+  color: var(--main-decor-color);
+}
+
+.slider-item_text {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 18px;
+  color: #fff;;
+}
+
+.control {
+  max-width: 224px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.control-title-mobile  {
+  color: #fff;
+  margin-top: 58px;
+  margin-bottom: 20px;
+}
+
+.control-img {
+  position: relative;
+}
+
+.control-img::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 40px;;
+  height: 0.1em;
+  width: 32px;
+  background-color: var(--main-decor-color);
+}
+
+.control-img::after {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  right: 40px;
+  height: 0.1em;
+  width: 32px;
+  background-color: var(--main-decor-color);
+}
+
+/*section repair*/
+
+.repair-mobile {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-dark);
+  padding-top: 20px;
+  margin-top: -1px;
+}
+
+.repair-video {
+  position: relative;
+  width: 300px;
+  height: 160px;
+  margin: 0 auto;
+}
+
+.repair-media {
+  width: 100%;
+  height: auto;
+}
+
+.repair-video::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: inherit;
+  height: inherit;
+  background-color:rgba(0, 0, 0, 0.7);
+  filter: drop-shadow(0px 20px 50px rgba(0, 0, 0, 0.15));
+}
+
+.repair-video::before {
+  content: url('../img/icons/play.svg');
+  position: absolute;
+  z-index: 1;
+  top: 20%;
+  left: 35%;
+  width: 37px;
+  height: 37px;
+  cursor: pointer;
+}
+
+.repair-info {
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 50px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 169.8%;
+  text-align: center;
+  color: #fff;
+}
+
+.info {
+  position: relative;
+}
+
+.info::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 1.5px;
+  background-color: var(--main-decor-color);
+  left: 43%;
+  top: -23px;
+}
+
+/*style for form*/
+
+.form-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: auto;
+  padding-bottom: 60px;
+  margin: 0 auto;
+  margin-top: 90px;
+  position: relative;
+}
+
+.repair-form-mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+.repair-form--item-mobile {
+  background-color: var(--bg-dark);
+  color: #fff;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-size: 14px;
+  line-height: 23px;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+.repair-form--item-mobile:last-child {
+  margin-bottom: 0;
+  margin-bottom: 25px;
+}
+
+.repair-form--item-mobile::placeholder {
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+.personalData-check {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.personalData-label {
+  font-size: 14px;
+  line-height: 163.68%;
+  color: #fff;
+}
+
+.personalData-check + .personalData-label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.personalData-check + .personalData-label::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  border: 1px solid #adb5bd;
+  margin-right: 10px;
+  border-radius: 1px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+}
+
+.personalData-check:checked + .personalData-label::before {
+  content: url('../img/icons/check.svg');
+  width: 18px;
+  height: 18px;
+  border: 1px solid transparent;
+}
+
+.form-submit-mobile {
+  width: 90%;
+  position: absolute;
+  bottom: -20px;
+  left: 5%;
+}
+
+.repair-button {
+  width: 200px;
+  height: 50px;
+}
+
+/*section types of repair*/
+
+.repair-title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+  color: #181818;
+}
+
+.typesOfRepair-cardPrice {
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.typesOfRepair-cardPrice {
+  display: flex;
+  flex-direction: column;
+}
+
+.typesOfRepair-description {
+  padding: 21px 41px 37px 31px;
+  width: 270px;
+  margin-top: -130px;
+  background: #fff;
+}
+
+.typesOfRepair-title {
+  margin-top: 58px;
+}
+
+.typesOfRepair-description--title {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 138.6%;
+  color: #363636;
+  margin-left: -15px;
+  margin-bottom: 10px;
+}
+
+.typesOfRepair-description--item {
+  font-size: 13px;
+  line-height: 169.8%;
+  color: #959595;
+}
+
+.typesOfRepair-meterOfSquare {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--main-decor-color);
+  margin-top: -17px;
+  width: 190px;
+  font-size: 15px;
+line-height: 138.6%;
+}
+
+.repair-subtitle {
+  font-size: 22px;
+  line-height: 138.6%;
+  color:  var(--main-decor-color);
+  text-align: center;
+}
+
+.slider-wrapper-2 {
+  position: relative;
+  max-width: 300px;
+  left: 3%;
+  margin-bottom: -120px;
+} 
+
+.btn-right {
+  right: 3%;
+}
+
+.btn-left {
+  left: 3%;
+}
+
+.control-title-2 {
+  margin: 55px 0 25px;
+}
+
+/*section questions*/
+
+.questions {
+  background-color: var(--bg-dark);
+  padding-top: 173px;
+  margin-bottom: -2px;
+}
+
+.control-title-3 {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 30px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.block {
+  position: static;
+  margin: 0 auto;
+  width: 100%;
+  height: 51px;
+  margin-top: 67px;
+  margin-bottom: 0;
+}
+
+.padding {
+  padding: 0;
+  padding-bottom: 46px;
+}
+
+/*section contacts*/
+
+.contacts {
+  background-color: var(--bg-dark);
+}
+
+.mobile {
+  display: flex;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+}
+
+.repair-subtitle {
+  text-transform: uppercase;
+}
+
+.contacts-contacts--title-mobile {
+  width: 320px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 138.6%;
+  margin: 42px 0 24px;
+}
+
+.contacts-contacts--social-icons {
+  display: flex;
+  width: 99px;
+  height: 40px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.social-icons {
+  width: 39px;
+  height: 39px;
+}
+
