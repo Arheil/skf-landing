@@ -46,13 +46,6 @@
 	  margin: 0 auto;
 	}
 
-	.header-wrapper {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		width: 100vw;
-	  }
-  
 	.header {
 	  width: 100vw;
 	  height: 83px;
@@ -937,7 +930,7 @@
 		height: 1074px;
 	}
 	.header {
-		padding: 22px 402px;
+		padding: 22px 42px;
 	}
 	.title {
 		left: 27%;
@@ -945,7 +938,7 @@
   }
 
   @media (min-width: 1901px) {
-	.header, .main, .projects, .dark_block {
+	.main, .projects, .dark_block {
 		width: 100vw;
 	}
 	  .header {
