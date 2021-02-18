@@ -48,6 +48,10 @@ body {
   display: none;
 }
 
+.center {
+  margin: 0 auto;
+}
+
 .subtitle {
   font-family: Yeseva One;
   font-style: normal;
@@ -66,25 +70,29 @@ body {
   color: #ffffff;
 }
 
-.container {
+.container-body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
 }
 
+.container {
+  max-width: 1440px;
+  /* margin: 0 auto; */
+}
+
 .header {
+  width: 100vw;
+  background-color: var(--bg-dark);
+}
+
+.header-wrapper {
   display: flex;
   justify-content: space-between;
   background-color: var(--bg-dark);
-  position: sticky;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 2;
   height: 55px;
-  padding: 22px 90px;
+  padding: 40px 90px;
   align-items: center;
-  width: 100vw;
 }
 
 .header-contacts {
@@ -439,7 +447,7 @@ body {
 .personalData-label {
   font-size: 14px;
   line-height: 163.68%;
-  color: #fff;
+  color: #131313;
 }
 
 .personalData-check + .personalData-label {
@@ -632,4 +640,3 @@ line-height: 138.6%;
   width: 39px;
   height: 39px;
 }
-
