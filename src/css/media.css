@@ -919,10 +919,13 @@
 }
 
 @media (min-width: 1441px) and (max-width: 1900px) {
-	.repair, .typesOfRepair, .contacts, .request,
+	/* .repair, .typesOfRepair, .contacts, .request,
 	.clients, .footer {
 		display: none;
-	} 
+	}  */
+	.clients > .container {
+		margin-left: 10%;
+	}
 	.header, .main, .projects, .dark_block {
 		max-width: 1900px;
 	}
@@ -933,7 +936,10 @@
 		height: 1074px;
 	}
 	.header {
-		padding: 22px 42px;
+		padding: 15px 170px;
+	}
+	.header-wrapper {
+		padding: 0;
 	}
 	.title {
 		left: 27%;
@@ -941,7 +947,7 @@
   }
 
   @media (min-width: 1901px) {
-	.main, .projects, .dark_block {
+	.main, .projects {
 		width: 100vw;
 	}
 	.header {
